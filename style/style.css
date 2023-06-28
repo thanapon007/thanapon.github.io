@@ -1,0 +1,19 @@
+
+body{
+    text-align: center;
+    background: burlywood;
+            
+}
+div{
+    background: rgb(175, 98, 10);
+    border: 3px solid black;
+    padding: 20px;
+    margin: 50px;
+        }
+h1{
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 3rem;
+    font-weight: 1200;
+    font-style: italic;
+        }
