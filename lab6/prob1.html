@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        background-color: blue;
+        height: 100px;
+        width: 25%;
+        float: left;
+        margin-top: 5px;
+      }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        
+        for (let i = 1; i <= 15; i++) {
+          const myDiv = document.createElement("div");
+          document.body.appendChild(myDiv);
+        }
+      
+        const random = (number) => Math.floor(Math.random() * number);
+      
+        const bgChange = () =>
+          "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+      
+        const divs = document.querySelectorAll("div");
+      
+        divs.forEach((div, index) => {
+          div.onclick = (e) => {
+            if (index %2 == 0) { // Skip second and fourth divs
+              e.target.style.backgroundColor = bgChange();
+            }
+            else{
+                e.target.style.backgroundColor = "yellow";
+
+            }
+          };
+        });
+      </script>
+      
+    
+</body>
+</html>

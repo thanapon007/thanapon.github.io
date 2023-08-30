@@ -1,19 +1,34 @@
 
 body{
-    text-align: center;
     background: burlywood;
             
 }
-div{
+div.pp{
     background: rgb(175, 98, 10);
     border: 3px solid black;
-    padding: 20px;
+    padding: 30px;
     margin: 50px;
+    
         }
+
 h1{
     font-family: 'Caprasimo', cursive;
     font-family: 'Sarabun', sans-serif;
     font-size: 3rem;
     font-weight: 1200;
     font-style: italic;
+    color: rgb(163, 234, 20);
         }
+p#dme{
+    font-size: small;
+    margin: 0;
+}
+p#heading{
+    color: blue;
+}
+.popular{
+    border: 4px dotted rgb(239, 12, 12);
+}
+div.xx{
+    text-align: center;
+}
